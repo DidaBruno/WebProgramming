@@ -140,3 +140,57 @@ footer {
         width: 100%;
     }
 }
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.table-div {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+main {
+    flex: 2;
+}
+
+aside {
+    flex: 1;
+}
+
+aside img {
+  width: 300px;
+  opacity: 0.8;
+  transition: 0.3s;
+  padding-top: 110px;
+}
+
+aside img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+
+  aside {
+    order: 2; /* ide ispod main */
+  }
+
+  aside img {
+    width: 300px;
+    opacity: 0.8;
+    transition: 0.3s;
+    }
+}
