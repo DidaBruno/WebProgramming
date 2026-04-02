@@ -6,26 +6,26 @@
 		<!--dodati meta tag bitan za stranicu-->
 		<meta name="description" content="Project for learning how to create web sites">
 		<!--dodati link za css dokumente -->
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="styles/style.css">
 		<title>Filmovi</title> <!--promijeniti odgovarajući tekst na stranici
 		ovo je samo predložak-->
 	</head>
 	<body>
 		<header>
-		<h1>Filmovi</h1>
+		<h1>Movie Database</h1>
 		</header>
 
-		<nav class="nav-menu" aria-label="Glavna navigacija"> <!-- dodati obilježja za ARIA-->
+		<nav class="nav-menu" aria-label="Main navigation"> <!-- dodati obilježja za ARIA-->
 			<ul>
-				<li><a href="index.html">Početna</a></li>
-				<li><a href="html/grafikon.html">Grafikon</a></li>
-				<li><a href="html/slike.html">Slike</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="pages/charts.html">Charts</a></li>
+				<li><a href="pages/images.html">images</a></li>
 			</ul>
 		</nav>
 		
 		<div class="container">
 			<main>
-				<h1>Podaci o filmovima</h1>
+				<h1>Movie Data</h1>
 
 				<table>
 					<tr>
@@ -42,14 +42,14 @@
 					<tr><td>Jailbirds New Orleans</td><td>N/A</td><td>TV Show</td><td>2021</td><td>TV-MA</td><td>1 Season</td></tr>
 					<tr><td>Kota Factory</td><td>Raghav Subbu</td><td>TV Show</td><td>2021</td><td>TV-MA</td><td>2 Seasons</td></tr>
 					<tr><td>Midnight Mass</td><td>Mike Flanagan</td><td>TV Show</td><td>2021</td><td>TV-MA</td><td>1 Season</td></tr>
-					<tr><td>My Little Pony: A New Generation</td><td>Robert Cullen, José Luis Ucha</td><td>Movie</td><td>2021</td><td>PG</td><td>91 min</td></tr>
+					<tr><td>My Little Pony: A New Generation</td><td>Robert Cullen, José Luis Ucha</td><td>Movie</td><td>2021</td><td>PG-13</td><td>91 min</td></tr>
 					<tr><td>Sankofa</td><td>Haile Gerima</td><td>Movie</td><td>1993</td><td>TV-MA</td><td>125 min</td></tr>
 					<tr><td>The Great British Baking Show</td><td>Andy Devonshire</td><td>TV Show</td><td>2021</td><td>TV-14</td><td>9 Seasons</td></tr>
 					<tr><td>The Starling</td><td>Theodore Melfi</td><td>Movie</td><td>2021</td><td>PG-13</td><td>104 min</td></tr>
 					<tr><td>Vendetta: Truth, Lies and The Mafia</td><td>Ruggero Di Maggio</td><td>TV Show</td><td>2021</td><td>TV-MA</td><td>1 Season</td></tr>
 					<tr><td>Bangkok Breaking</td><td>Kongkiat Komesiri</td><td>TV Show</td><td>2021</td><td>TV-MA</td><td>1 Season</td></tr>
 					<tr><td>Je Suis Karl</td><td>Christian Schwochow</td><td>Movie</td><td>2021</td><td>TV-MA</td><td>127 min</td></tr>
-					<tr><td>Confessions of an Invisible Girl</td><td>Bruno Garotti</td><td>Movie</td><td>2021</td><td>TV-PG</td><td>91 min</td></tr>
+					<tr><td>Confessions of an Invisible Girl</td><td>Bruno Garotti</td><td>Movie</td><td>2021</td><td>PG-13</td><td>91 min</td></tr>
 					<tr><td>Crime Stories: India Detectives</td><td>N/A</td><td>TV Show</td><td>2021</td><td>TV-MA</td><td>1 Season</td></tr>
 					<tr><td>Dear White People</td><td>Justin Simien</td><td>TV Show</td><td>2021</td><td>TV-MA</td><td>4 Seasons</td></tr>
 					<tr><td>Europe's Most Dangerous Man: Otto Skorzeny in Spain</td><td>Pedro de Echave García, Pablo Azorín Williams</td><td>Movie</td><td>2020</td><td>TV-MA</td><td>67 min</td></tr>
@@ -62,18 +62,20 @@
 			<aside>
 				<picture class="aside-img">
 					<source media="(min-width: 768px)" srcset="images/movie-desktop.jpg">
-					<img src="images/movie-mobile.jpg" alt="Poster filma">
+					<img src="images/movie-mobile.jpg" alt="Movie poster for Lord of the Rings">
+				</picture>
+				<picture class="aside-img">
+					<source media="(min-width: 768px)" srcset="images/movie-desktop-phm.png">
+					<img src="images/movie-mobile-phm.png" alt="Movie poster for Project Hail Mary">
 				</picture>
 			</aside>
 		</div>
 
-		<section aria-label="O stranici"> <!-- dodati neke od obilježja za ARIA-->
-			<h2>O stranici</h2>
-			<p>Ova stranica je napravljena isključivo u svrhe laboratorijskih vježbi iz predmeta Web Programiranje.</p>
+		<section aria-label="About the website"> <!-- dodati neke od obilježja za ARIA-->
+			<h2>About</h2>
+			<p>This website is used for learning Web Progamming. This example showcases responsiveness, creating CSS-only charts, image lightboxes, css animations.</p>
 		</section>	
 
-		<!--dodati odgovarajuće elemente na temelju danog zadatka: tablice, slike, tekst
-		Nepotrebno obrisati! -->
 		<footer>
 		<p>&copy; 2026. Web Programming. All rights reserved.</p>
 		</footer>
