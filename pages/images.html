@@ -1,135 +1,100 @@
-<!--DODATI ŠTO NEDOSTAJE!-->
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galerija slika u projektu za web programiranje">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style_images.css">
+    <title>Galerija slika</title>
+</head>
+<body>
 
-<!-- Slike u galeriji -->
+    <header>
+        <h1>Movie Gallery</h1>
+    </header>
 
+    <nav class="nav-menu" aria-label="Main navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="charts.html">Charts</a></li>
+            <li><a href="images.html">Gallery</a></li>
+        </ul>
+    </nav>
 
+    <main class="image-container">
+        <h1>Gallery</h1>
 
+        <section class="gallery">
+            <!-- 8 slika u gridu 2x4 -->
+            <figure class="magnific-img">
+                <a href="#img01"><img src="https://image.tmdb.org/t/p/w400/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg" alt="Slika 1" loading="lazy"></a>
+            </figure>
+            <figure class="magnific-img">
+                <a href="#img02"><img src="https://image.tmdb.org/t/p/w400/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" alt="Slika 2" loading="lazy"></a>
+            </figure>
+            <figure class="magnific-img">
+                <a href="#img03"><img src="https://image.tmdb.org/t/p/w400/74xTEgt7R36Fpooo50r9T25onhq.jpg" alt="Slika 3" loading="lazy"></a>
+            </figure>
+            <figure class="magnific-img">
+                <a href="#img04"><img src="https://image.tmdb.org/t/p/w400/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg" alt="Slika 4" loading="lazy"></a>
+            </figure>
+            <figure class="magnific-img">
+                <a href="#img05"><img src="https://image.tmdb.org/t/p/w400/v7TaX8kXMXs5yFFGR41guUDNcnB.jpg" alt="Slika 5" loading="lazy"></a>
+            </figure>
+            <figure class="magnific-img">
+                <a href="#img06"><img src="https://image.tmdb.org/t/p/w400/705nQHqe4JGdEisrQmVYmXyjs1U.jpg" alt="Slika 6" loading="lazy"></a>
+            </figure>
+            <figure class="magnific-img">
+                <a href="#img07"><img src="https://image.tmdb.org/t/p/w400/firAhZA0uQvRL2slp7v3AnOj0ZX.jpg" alt="Slika 7" loading="lazy"></a>
+            </figure>
+            <figure class="magnific-img">
+                <a href="#img08"><img src="https://image.tmdb.org/t/p/w400/yihdXomYb5kTeSivtFndMy5iDmf.jpg" alt="Slika 8" loading="lazy"></a>
+            </figure>
+            <figure class="magnific-img">
+                <a href="#img09"><img src="https://image.tmdb.org/t/p/w400/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg" alt="Slika 9" loading="lazy"></a>
+            </figure>
+            <figure class="magnific-img">
+                <a href="#img10"><img src="https://image.tmdb.org/t/p/w400/ptpr0kGAckfQkJeJIt8st5dglvd.jpg" alt="Slika 10" loading="lazy"></a>
+            </figure>
+            <figure class="magnific-img">
+                <a href="#img11"><img src="https://image.tmdb.org/t/p/w400/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg" alt="Slika 11" loading="lazy"></a>
+            </figure>
+            <figure class="magnific-img">
+                <a href="#img12"><img src="https://image.tmdb.org/t/p/w400/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg" alt="Slika 12" loading="lazy"></a>
+            </figure>
+            <figure class="magnific-img">
+                <a href="#img13"><img src="https://image.tmdb.org/t/p/w400/kW9LmvYHAaS9iA0tHmZVq8hQYoq.jpg" alt="Slika 13" loading="lazy"></a>
+            </figure>
+            <figure class="magnific-img">
+                <a href="#img14"><img src="https://image.tmdb.org/t/p/w400/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg" alt="Slika 14" loading="lazy"></a>
+            </figure>
+            <figure class="magnific-img">
+                <a href="#img15"><img src="https://image.tmdb.org/t/p/w400/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg" alt="Slika 15" loading="lazy"></a>
+            </figure>
+        </section>
+    </main>
 
+    <!-- Lightbox targeti -->
+    <div class="lightbox-target" id="img01"><img src="https://image.tmdb.org/t/p/w780/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg" alt="Slika 1"><a class="lightbox-close" href="#">x</a></div>
+    <div class="lightbox-target" id="img02"><img src="https://image.tmdb.org/t/p/w780/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" alt="Slika 2"><a class="lightbox-close" href="#">x</a></div>
+    <div class="lightbox-target" id="img03"><img src="https://image.tmdb.org/t/p/w780/74xTEgt7R36Fpooo50r9T25onhq.jpg" alt="Slika 3"><a class="lightbox-close" href="#">x</a></div>
+    <div class="lightbox-target" id="img04"><img src="https://image.tmdb.org/t/p/w780/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg" alt="Slika 4"><a class="lightbox-close" href="#">x</a></div>
+    <div class="lightbox-target" id="img05"><img src="https://image.tmdb.org/t/p/w780/v7TaX8kXMXs5yFFGR41guUDNcnB.jpg" alt="Slika 5"><a class="lightbox-close" href="#">x</a></div>
+    <div class="lightbox-target" id="img06"><img src="https://image.tmdb.org/t/p/w780/705nQHqe4JGdEisrQmVYmXyjs1U.jpg" alt="Slika 6"><a class="lightbox-close" href="#">x</a></div>
+    <div class="lightbox-target" id="img07"><img src="https://image.tmdb.org/t/p/w780/firAhZA0uQvRL2slp7v3AnOj0ZX.jpg" alt="Slika 7"><a class="lightbox-close" href="#">x</a></div>
+    <div class="lightbox-target" id="img08"><img src="https://image.tmdb.org/t/p/w780/yihdXomYb5kTeSivtFndMy5iDmf.jpg" alt="Slika 8"><a class="lightbox-close" href="#">x</a></div>
+    <div class="lightbox-target" id="img09"><img src="https://image.tmdb.org/t/p/w780/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg" alt="Slika 9"><a class="lightbox-close" href="#">x</a></div>
+    <div class="lightbox-target" id="img10"><img src="https://image.tmdb.org/t/p/w780/ptpr0kGAckfQkJeJIt8st5dglvd.jpg" alt="Slika 10"><a class="lightbox-close" href="#">x</a></div>
+    <div class="lightbox-target" id="img11"><img src="https://image.tmdb.org/t/p/w780/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg" alt="Slika 11"><a class="lightbox-close" href="#">x</a></div>
+    <div class="lightbox-target" id="img12"><img src="https://image.tmdb.org/t/p/w400/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg" alt="Slika 12"><a class="lightbox-close" href="#">x</a></div>
+    <div class="lightbox-target" id="img13"><img src="https://image.tmdb.org/t/p/w780/kW9LmvYHAaS9iA0tHmZVq8hQYoq.jpg" alt="Slika 13"><a class="lightbox-close" href="#">x</a></div>
+    <div class="lightbox-target" id="img14"><img src="https://image.tmdb.org/t/p/w780/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg" alt="Slika 14"><a class="lightbox-close" href="#">x</a></div>
+    <div class="lightbox-target" id="img15"><img src="https://image.tmdb.org/t/p/w780/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg" alt="Slika 15"><a class="lightbox-close" href="#">x</a></div>
 
-<section class="galerija"> 
-	<h1>Galerija slika</h1>
+    <footer>
+        <p>&copy; 2026. Web Programming. All rights reserved.</p>
+    </footer>
 
-	<!-- putanja (href) u tagu a je drugačija kad se koristi lightbox od onoga kada želimo da se 
-					 otvori u novom tabu -->
-
-
-	<figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=1" title="1.jpg">
-		  <img src="https://unsplash.it/300/200?random=1" alt="Slika 1">
-		</a>
-		<figcaption>Slika 1</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="2.jpg">
-		  <img src="https://unsplash.it/300/200?random=2" alt="Slika 2">
-		</a>
-		<figcaption>Slika 2</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=3" title="3.jpg">
-		  <img src="https://unsplash.it/300/200?random=3" alt="Slika 3">
-		</a>
-		<figcaption>Slika 3</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=4" title="4.jpg">
-		  <img src="https://unsplash.it/300/200?random=4" alt="Slika 4">
-		</a>
-		<figcaption>Slika 4</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=5" title="5.jpg">
-		  <img src="https://unsplash.it/300/200?random=5" alt="Slika 5">
-		</a>
-		<figcaption>Slika 5</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=6" title="6.jpg">
-		  <img src="https://unsplash.it/300/200?random=6" alt="Slika 6">
-		</a>
-		<figcaption>Slika 6</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=7" title="7.jpg">
-		  <img src="https://unsplash.it/300/200?random=7" alt="Slika 7">
-		</a>
-		<figcaption>Slika 7</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=8" title="8.jpg">
-		  <img src="https://unsplash.it/300/200?random=8" alt="Slika 8">
-		</a>
-		<figcaption>Slika 8</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=9" title="9.jpg">
-		  <img src="https://unsplash.it/300/200?random=9" alt="Slika 9">
-		</a>
-		<figcaption>Slika 9</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=10" title="10.jpg">
-		  <img src="https://unsplash.it/300/200?random=10" alt="Slika 10">
-		</a>
-		<figcaption>Slika 10</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=11" title="11.jpg">
-		  <img src="https://unsplash.it/300/200?random=11" alt="Slika 11">
-		</a>
-		<figcaption>Slika 11</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=12" title="12.jpg">
-		  <img src="https://unsplash.it/300/200?random=12" alt="Slika 12">
-		</a>
-		<figcaption>Slika 12</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=13" title="13.jpg">
-		  <img src="https://unsplash.it/300/200?random=13" alt="Slika 13">
-		</a>
-		<figcaption>Slika 13</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=14" title="14.jpg">
-		  <img src="https://unsplash.it/300/200?random=14" alt="Slika 14">
-		</a>
-		<figcaption>Slika 14</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=15" title="15.jpg">
-		  <img src="https://unsplash.it/300/200?random=15" alt="Slika 15">
-		</a>
-		<figcaption>Slika 15</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=16" title="16.jpg">
-		  <img src="https://unsplash.it/300/200?random=16" alt="Slika 16">
-		</a>
-		<figcaption>Slika 16</figcaption>
-	  </figure>
-	  
-	
-	  
-</section>
-
-
-
-
-
+</body>
+</html>
