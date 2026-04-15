@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/DidaBruno/WebProgramming#readme",
   "dependencies": {
-    "ejs": "^5.0.1",
+    "ejs": "^5.0.2",
     "express": "^5.2.1"
   }
 }

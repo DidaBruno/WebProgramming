@@ -243,6 +243,15 @@ section {
   padding: 20px;
 }
 
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto; 
+}
+
+.table-wrapper table {
+  min-width: 700px;
+}
+
 /* Responzivnost */
 @media (max-width: 768px) {
     .data-container {
