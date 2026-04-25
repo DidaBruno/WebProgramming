@@ -3,12 +3,14 @@ const app = express();
 const fs = require('fs');
 const path = require('path');
 
+const PORT = process.env.PORT || 3000;
+
 app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.redirect('/images');
+    res.send('Hello from the Railway server');
 });
 
 app.get('/images', (req, res) => {
@@ -26,6 +28,6 @@ app.get('/images', (req, res) => {
     res.render('images', { images });
 });
 
-app.listen(3000, () => {
-    console.log("Server started on http://localhost:3000");
+app.listen(PORT, () => {
+    console.log('Server started on http://localhost:${PORT}');
 });
