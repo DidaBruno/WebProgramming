@@ -42,6 +42,11 @@ function prikaziTablicu(filmovi) {
             <td>${film.duration}</td>
             <td>${film.country.join(', ')}</td>
             <td>${film.rating}</td>
+            <td>
+                <button class="button" onclick="dodajUKosaricu('${film.title}')">
+                    Add
+                </button>
+            </td>
         `;
 
         tbody.appendChild(row);
@@ -114,3 +119,17 @@ document.getElementById('sort').addEventListener('change', (e) => {
 
     prikaziTablicu(sortirani);
 });
+
+
+function dodajUKosaricu(title) {
+
+    const film = sviFilmovi.find(f => f.title === title);
+
+    let kosarica = JSON.parse(localStorage.getItem('kosarica')) || [];
+
+    kosarica.push(film);
+
+    localStorage.setItem('kosarica', JSON.stringify(kosarica));
+
+    alert(`Film "${film.title}" dodan u košaricu!`);
+}
