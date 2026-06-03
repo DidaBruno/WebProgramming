@@ -90,7 +90,7 @@ require_once 'includes/header.php';
             </div>
         <?php endif; ?>
 
-        <p style="margin-top:20px;"><a href="films.php">← Natrag na popis filmova</a></p>
+        <p style="margin-top:20px;"><a href="films.php" class="btn-link">← Natrag na popis filmova</a></p>
     </main>
 </div>
 

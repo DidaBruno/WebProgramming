@@ -74,3 +74,26 @@ INSERT INTO filmovi (naslov, zanr, godina, trajanje_min, ocjena, redatelj, zemlj
 -- Admin korisnik (korisnicko ime: admin, lozinka: password)
 INSERT INTO korisnici (korisnicko_ime, email, lozinka, uloga) VALUES
 ('admin', 'admin@videoteka.hr', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'administrator');
+
+
+-- ZADATAK 2: Ocjenjivanje fotografija
+
+-- Tablica slika (puni se automatski iz foldera public/images preko galerija.php)
+CREATE TABLE IF NOT EXISTS slike (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    naziv_datoteke VARCHAR(255) NOT NULL UNIQUE, -- npr. 01-movie.jpg; UNIQUE da se ista slika ne ubaci dvaput
+    putanja VARCHAR(255) NOT NULL, -- relativna putanja do slike
+    opis VARCHAR(255) DEFAULT NULL
+);
+
+-- Tablica ocjena (1-5 zvjezdica)
+CREATE TABLE IF NOT EXISTS ocjene (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_korisnik INT NOT NULL,
+    id_slika INT NOT NULL,
+    ocjena TINYINT NOT NULL, -- 1 do 5
+    vrijeme_ocjene TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_korisnik) REFERENCES korisnici(id) ON DELETE CASCADE,
+    FOREIGN KEY (id_slika) REFERENCES slike(id) ON DELETE CASCADE,
+    UNIQUE KEY jedan_glas (id_korisnik, id_slika) -- jedan korisnik = jedna ocjena po slici (ponovna ocjena ažurira)
+);

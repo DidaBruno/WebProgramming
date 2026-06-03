@@ -21,8 +21,8 @@ gd<?php
         <li><a href="<?= $cssPath ?>index.html">Home</a></li>
         <li><a href="<?= $cssPath ?>pages/cart.html">Cart</a></li>
         <li><a href="<?= $cssPath ?>pages/charts.html">Charts</a></li>
-        <li><a href="<?= $cssPath ?>images">Gallery</a></li>
         <li class="nav-new"><a href="<?= $basePath ?>films.php">Videoteka</a></li>
+        <li class="nav-new"><a href="<?= $basePath ?>galerija.php">Galerija</a></li>
         <?php if (jePrijavljen()): ?>
             <li class="nav-new"><a href="<?= $basePath ?>videoteka.php">Moja videoteka</a></li>
             <?php if (jeAdmin()): ?>

@@ -133,6 +133,24 @@
     text-decoration: none;
 }
 
+/* Link koji izgleda kao gumb */
+.btn-link {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #3a3a3a;
+    color: #f1f1f1;
+    border: 1px solid #4a4a4a;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-link:hover {
+    background-color: #4a4a4a;
+}
+
 /* Forma za dodavanje filma (dashboard) */
 .film-form {
     display: flex;
