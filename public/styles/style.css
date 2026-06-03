@@ -38,6 +38,15 @@ header {
   background-color: #222;
 }
 
+/* Novi PHP putevi - tamno ljubicasta */
+.nav-menu li.nav-new {
+  background-color: #3a1f4d;
+}
+
+.nav-menu li.nav-new:hover {
+  background-color: #50296b;
+}
+
 .nav-menu a {
     text-decoration: none;
     color: white;

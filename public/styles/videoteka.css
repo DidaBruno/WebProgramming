@@ -1,0 +1,176 @@
+/* Poruke */
+.poruka-uspjeh {
+    background-color: #1a4a1a;
+    border: 1px solid #2d7a2d;
+    color: #7fff7f;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.poruka-greska {
+    background-color: #4a1a1a;
+    border: 1px solid #a33;
+    color: #ffaaaa;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.poruka-greska p,
+.poruka-uspjeh p {
+    margin: 4px 0;
+}
+
+.poruka-upozorenje {
+    background-color: #4a3a00;
+    border: 2px solid #cc9900;
+    color: #ffd700;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.poruka-upozorenje p {
+    margin: 0 0 10px 0;
+    font-size: 15px;
+}
+
+/* Auth forme */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+.auth-form label {
+    font-size: 13px;
+    color: #bbb;
+    margin-bottom: 2px;
+}
+
+.auth-form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #1f1f1f;
+    color: #eee;
+    font-size: 14px;
+}
+
+.auth-form input:focus {
+    outline: none;
+    border-color: #777;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 10px;
+    background: #3a6ea8;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.auth-form button:hover {
+    background: #4a8acc;
+}
+
+/* Gumbi u tablici */
+.btn-dodaj {
+    padding: 5px 12px;
+    background: #1e5c1e;
+    border: 1px solid #2d8a2d;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.btn-dodaj:hover {
+    background: #2d8a2d;
+}
+
+.btn-ukloni {
+    padding: 5px 10px;
+    background: #5c1e1e;
+    border: 1px solid #a33;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-ukloni:hover {
+    background: #a33;
+}
+
+.btn-uredi {
+    padding: 5px 10px;
+    background: #3a4a6a;
+    border: 1px solid #5a6a9a;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-right: 4px;
+}
+
+.btn-uredi:hover {
+    background: #5a6a9a;
+}
+
+.btn-prijava {
+    color: #7ab8ff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* Forma za dodavanje filma (dashboard) */
+.film-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 12px;
+}
+
+.form-grid label {
+    display: block;
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 4px;
+}
+
+.form-grid input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    background: #1f1f1f;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #eee;
+    font-size: 14px;
+}
+
+.form-grid input:focus {
+    outline: none;
+    border-color: #777;
+}
+
+.film-form > button {
+    width: auto;
+    padding: 10px 20px;
+    align-self: flex-start;
+}
