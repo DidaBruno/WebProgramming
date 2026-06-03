@@ -100,6 +100,8 @@
 }
 
 .btn-ukloni {
+    width: auto;
+    white-space: nowrap;
     padding: 5px 10px;
     background: #5c1e1e;
     border: 1px solid #a33;
@@ -114,6 +116,8 @@
 }
 
 .btn-uredi {
+    width: auto;
+    white-space: nowrap;
     padding: 5px 10px;
     background: #3a4a6a;
     border: 1px solid #5a6a9a;
