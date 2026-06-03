@@ -1,4 +1,4 @@
-gd<?php
+<?php
 // $cssPath i $basePath se postavljaju u svakoj stranici koja uključuje ovaj header
 ?>
 <!DOCTYPE html>

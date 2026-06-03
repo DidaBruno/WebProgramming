@@ -72,7 +72,7 @@ require_once '../includes/header.php';
 
         <form method="POST" class="auth-form">
             <label>Korisničko ime</label>
-            // vraca upisanu vrijednost nakon neuspjeha da korisnik ne mora ponovno tipkati ime/email
+            <!-- vraca upisanu vrijednost nakon neuspjeha da korisnik ne mora ponovno tipkati ime/email -->
             <input type="text" name="korisnicko_ime"
                    value="<?= htmlspecialchars($_POST['korisnicko_ime'] ?? '') ?>"
                    required minlength="3">
