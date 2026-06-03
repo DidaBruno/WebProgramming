@@ -48,7 +48,8 @@ require_once 'includes/header.php';
         <?php endif; ?>
 
         <?php if (empty($mojiFilmovi)): ?>
-            <p>Vaša videoteka je prazna. <a href="films.php">Dodajte filmove</a>.</p>
+            <p>Vaša videoteka je prazna.</p>
+            <p style="margin-top:20px;"><a href="films.php" class="btn-link">← Natrag na popis filmova</a></p>
         <?php else: ?>
             <div class="table-wrapper">
                 <table>
@@ -89,8 +90,6 @@ require_once 'includes/header.php';
                 </table>
             </div>
         <?php endif; ?>
-
-        <p style="margin-top:20px;"><a href="films.php" class="btn-link">← Natrag na popis filmova</a></p>
     </main>
 </div>
 

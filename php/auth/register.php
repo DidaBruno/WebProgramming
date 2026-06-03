@@ -12,7 +12,7 @@ if (jePrijavljen()) {
 $greske = [];
 $uspjeh = '';
 
-// obrada post requesta nakon klika submit buttona
+// obrada post requesta nakon klika na submit
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $korisnicko_ime = trim($_POST['korisnicko_ime'] ?? '');
     $email = trim($_POST['email'] ?? '');

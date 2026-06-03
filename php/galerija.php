@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['ocjena'], $_POST['id_
         exit;
     }
     $id_slika = (int)$_POST['id_slika'];
-    $ocjena   = (int)$_POST['ocjena'];
+    $ocjena = (int)$_POST['ocjena'];
 
     if ($ocjena >= 1 && $ocjena <= 5) {
         // INSERT, a ako veza korisnik+slika već postoji -> UPDATE (ponovna ocjena)
